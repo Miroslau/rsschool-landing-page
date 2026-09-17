@@ -1,0 +1,73 @@
+@import "reset.css";
+@import "variables.css";
+
+body {
+    background-color: var(--backround-color);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    transition: background-color 0.3s ease;
+}
+
+.header {
+    padding: 20px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 3px;
+    background-color: transparent;
+    border: 1px solid var(--color-silk);
+    border-radius: 100px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, filter 0.3s ease;
+}
+
+.toggle-button__item--sun {
+    background-color: var(--sun-button-color);
+}
+
+.toggle-button__item--moon {
+    background-color: var(--moon-button-color);
+}
+
+.dark-theme .toggle-button__item--moon img {
+    filter: invert(93%) sepia(6%) saturate(351%) hue-rotate(334deg) brightness(96%) contrast(85%);
+}
+
+@media (hover: hover) {
+    .toggle-button:hover .toggle-button__item--moon {
+        background-color: var(--color-bright-green);
+    }
+    .toggle-button:hover .toggle-button__item--moon img{
+        filter: invert(93%) sepia(6%) saturate(351%) hue-rotate(334deg) brightness(96%) contrast(85%);
+    }
+
+    .dark-theme .toggle-button:hover .toggle-button__item--moon {
+        background-color: var(--moon-button-color);
+    }
+
+    .dark-theme .toggle-button:hover .toggle-button__item--sun {
+        background: #403F3D;
+    }
+
+}
