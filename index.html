@@ -15,49 +15,65 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <nav class="logo__nav">
-                <a href="index.html" class="logo__link">
-                    <img class="logo__img" src="./pictures/svg/logo.svg" alt="Coffee House Logo">
-                </a>
+        <div class="header-container">
+            <div class="logo">
+                <nav class="logo__nav">
+                    <a href="index.html" class="logo__link">
+                        <img class="logo__img" src="./pictures/svg/logo.svg" alt="Coffee House Logo">
+                    </a>
+                </nav>
+            </div>
+            <nav class="header-container__nav">
+                <ul class="navigation-list">
+                    <li class="navigation-list__item">
+                        <a href="#" class="navigation-list__link">Favorite coffee</a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="navigation-list__link">About</a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="navigation-list__link">Mobile app</a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="navigation-list__link">Contact us</a>
+                    </li>
+                </ul>
             </nav>
-        </div>
-        <nav class="header__nav">
-            <ul class="navigation-list">
-                <li class="navigation-list__item">
-                    <a href="#" class="navigation-list__link">Favorite coffee</a>
-                </li>
-                <li class="navigation-list__item">
-                    <a href="#" class="navigation-list__link">About</a>
-                </li>
-                <li class="navigation-list__item">
-                    <a href="#" class="navigation-list__link">Mobile app</a>
-                </li>
-                <li class="navigation-list__item">
-                    <a href="#" class="navigation-list__link">Contact us</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="buttons">
-            <button class="toggle-button" id="theme-button" aria-label="Toggle button">
+            <div class="buttons">
+                <button class="toggle-button" id="theme-button" aria-label="Toggle button">
                 <span class="toggle-button__item toggle-button__item--sun">
                     <img src="./pictures/svg/sun.svg" alt="Sun">
                 </span>
-                <span class="toggle-button__item toggle-button__item--moon">
+                    <span class="toggle-button__item toggle-button__item--moon">
                     <img src="./pictures/svg/moon.svg" alt="Moon">
                 </span>
-            </button>
-            <div class="burger-button">
-                <div class="burger-button__item"></div>
-                <div class="burger-button__item"></div>
+                </button>
+                <div class="burger-button">
+                    <div class="burger-button__item"></div>
+                    <div class="burger-button__item"></div>
+                </div>
+                <nav class="header-container__menu-button">
+                    <a href="#" class="navigation-list__item navigation-list__link navigation-list__link_icon">
+                        <span>Menu</span>
+                        <img class="cup-icon__img" src="./pictures/svg/coffee-cup.svg" alt="coffee-cup-icon">
+                    </a>
+                </nav>
             </div>
-            <nav class="header__menu-button">
-                <a href="#" class="navigation-list__item navigation-list__link navigation-list__link_icon">
-                    <span>Menu</span>
-                    <img id="cup-icon__img" src="./pictures/svg/coffee-cup.svg" alt="coffee-cup-icon">
-                </a>
-            </nav>
         </div>
+        <section class="header-title">
+            <div class="header-title__container">
+                <h1 class="header-title__heading"><i>Enjoy</i> premium coffee at our charming cafe</h1>
+                <p class="header-title__text">
+                    With its inviting atmosphere and delicious coffee options, the Coffee <br>
+                    House Resource is a popular destination for coffee lovers and those <br>
+                    seeking a warm and inviting space to enjoy their favorite beverage. <br>
+                </p>
+                <a href="#" class="navigation-list__link_icon header-title__button">
+                    <span>Menu</span>
+                    <img id="cup-icon-button" class="cup-icon__img" src="./pictures/svg/coffee-cup.svg" alt="coffee-cup-icon">
+                </a>
+            </div>
+        </section>
     </header>
     <main>main</main>
     <footer>footer</footer>
