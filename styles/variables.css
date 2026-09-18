@@ -4,6 +4,7 @@
     --backround-color: #E1D4C9;
     --sun-button-color: #B0907A;
     --moon-button-color: transparent;
+    --navigation-item-color: #403F3D;
     --color-tuatara: #403F3D;
     --color-bright-green: #665F55;
     --color-silk: #C1B6AD;
@@ -14,4 +15,7 @@
     --backround-color: #292826;
     --sun-button-color: transparent;
     --moon-button-color: #B0907A;
+    --color-bright-green: #C1B6AD;
+    --color-tuatara: #C1B6AD;
+    --navigation-item-color: #E1D4C9;
 }

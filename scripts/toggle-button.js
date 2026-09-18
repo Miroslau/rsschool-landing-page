@@ -1,5 +1,13 @@
 const themeButton = document.getElementById('theme-button');
 const rootElement = document.documentElement;
+const logoImg = document.querySelector('.logo__img');
+const cupIconImg = document.querySelector('#cup-icon__img');
+
+const LIGHT_LOGO = './pictures/svg/logo.svg';
+const DARK_LOGO = './pictures/svg/logo-light.svg';
+
+const LIGHT_CUP_ICON = './pictures/svg/coffee-cup-light.svg';
+const DARK_CUP_ICON = './pictures/svg/coffee-cup.svg';
 
 function getTheme() {
     const theme = localStorage.getItem('theme');
@@ -8,8 +16,12 @@ function getTheme() {
 
     if (theme === 'dark' || (!theme && prefersDarkTheme)) {
         rootElement.classList.add('dark-theme');
+        if (logoImg) logoImg.src = DARK_LOGO;
+        if (cupIconImg) cupIconImg.src = LIGHT_CUP_ICON;
     } else {
         rootElement.classList.remove('dark-theme');
+        if (logoImg) logoImg.src = LIGHT_LOGO;
+        if (cupIconImg) cupIconImg.src = DARK_CUP_ICON;
     }
 }
 
@@ -18,8 +30,12 @@ function toggleTheme() {
 
     if (rootElement.classList.contains('dark-theme')) {
         localStorage.setItem('theme', 'dark');
+        if (logoImg) logoImg.src = DARK_LOGO;
+        if (cupIconImg) cupIconImg.src = LIGHT_CUP_ICON;
     } else {
         localStorage.setItem('theme', 'light');
+        if (logoImg) logoImg.src = LIGHT_LOGO;
+        if (cupIconImg) cupIconImg.src = DARK_CUP_ICON;
     }
 }
 
