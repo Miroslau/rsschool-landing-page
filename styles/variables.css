@@ -11,6 +11,10 @@
     --color-tuatara-text: #292826;
     --header-text-color: #E1D4C9;
     --header-text-color-italic: #B0907A;
+    --slider-bullet-color: #C1B6AD;
+    --slider-bullet-active-color: #665F55;
+    --arrow-border-color: #665F55;
+    --arrow-color: #403F3D;
 }
 
 :root.dark-theme {
@@ -21,4 +25,8 @@
     --color-tuatara: #C1B6AD;
     --navigation-item-color: #E1D4C9;
     --header-text-color: #292826;
+    --slider-bullet-color: #665F55;
+    --slider-bullet-active-color: #C1B6AD;
+    --arrow-border-color: #C1B6AD;
+    --arrow-color: #E1D4C9;
 }
