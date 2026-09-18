@@ -4,7 +4,7 @@ A responsive, two-page website for a modern coffee house, featuring adaptive lay
 
 ## 🔗 Project Links
 
-*   **Deploy Link:** [Live Demo](https://github.io)
+*   **Deploy Link:** [Live Demo](https://miroslau.github.io/rsschool-landing-page/index)
 *   **Pull Request:** [PR Link](https://github.com)
 *   **Figma Mockup:** [Coffee House 2026Q3](https://www.figma.com/design/yuc5s9NCc4jENkk5LdFfvX/Coffee-House-2026Q3?node-id=0-1&p=f&t=6ppXAThv6wnTcaMK-0)
 
