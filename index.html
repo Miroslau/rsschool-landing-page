@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <script src="./scripts/toggle-button.js" defer></script>
+    <title>Coffee House</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <nav class="logo__nav">
+                    <a href="index.html" class="logo__link">
+                        <img class="logo__img" src="./pictures/svg/logo.svg" alt="Coffee House Logo">
+                    </a>
+                </nav>
+            </div>
+            <nav class="header-container__nav">
+                <ul class="navigation-list">
+                    <li class="navigation-list__item">
+                        <a href="#" class="navigation-list__link">Favorite coffee</a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="navigation-list__link">About</a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="navigation-list__link">Mobile app</a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="navigation-list__link">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                <button class="toggle-button" id="theme-button" aria-label="Toggle button">
+                <span class="toggle-button__item toggle-button__item--sun">
+                    <img src="./pictures/svg/sun.svg" alt="Sun">
+                </span>
+                    <span class="toggle-button__item toggle-button__item--moon">
+                    <img src="./pictures/svg/moon.svg" alt="Moon">
+                </span>
+                </button>
+                <div class="burger-button">
+                    <div class="burger-button__item"></div>
+                    <div class="burger-button__item"></div>
+                </div>
+                <nav class="header-container__menu-button">
+                    <a href="#" class="navigation-list__item navigation-list__link navigation-list__link_icon">
+                        <span>Menu</span>
+                        <img class="cup-icon__img" src="./pictures/svg/coffee-cup.svg" alt="coffee-cup-icon">
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <section class="header-title">
+            <div class="header-title__container">
+                <h1 class="header-title__heading">
+                    <i>Enjoy</i> premium <br>
+                    coffee at our <br>
+                    charming cafe <br>
+                </h1>
+                <p class="header-title__text">
+                    With its inviting atmosphere and delicious coffee options, the Coffee <br>
+                    House Resource is a popular destination for coffee lovers and those <br>
+                    seeking a warm and inviting space to enjoy their favorite beverage. <br>
+                </p>
+                <a href="#" class="navigation-list__link_icon header-title__button">
+                    <span>Menu</span>
+                    <img id="cup-icon-button" class="cup-icon__img" src="./pictures/svg/coffee-cup.svg" alt="coffee-cup-icon">
+                </a>
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <section class="favorite-section">
+            <h2 class="favorite-section__title">Choose your <i>favorite</i> <br> coffee</h2>
+            <div class="slider-container">
+                <div class="slider-content-wrapper">
+                    <button class="slider-arrow slider-arrow_left">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.5 12H6M12 18L6 12L12 6" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="slider-card">
+                        <img class="slider-card__image" src="./pictures/png/coffee-1.png" alt="S’mores Frappuccino">
+                        <h3 class="slider-card__title">S’mores Frappuccino</h3>
+                        <p class="slider-card__text">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                        <span class="slider-card__price">$5.50</span>
+                    </div>
+                    <button class="slider-arrow slider-arrow_right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12H18.5M12.5 18L18.5 12L12.5 6" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="slider-controls">
+                    <span class="slider-bullet slider-bullet_active"></span>
+                    <span class="slider-bullet"></span>
+                    <span class="slider-bullet"></span>
+                </div>
+            </div>
+        </section>
+        <section class="about-section">Favorite coffee</section>
+        <section class="mobile-app-section">Favorite coffee</section>
+    </main>
+    <footer class="footer">footer</footer>
+</body>
+</html>
