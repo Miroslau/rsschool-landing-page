@@ -15,6 +15,11 @@
     --slider-bullet-active-color: #665F55;
     --arrow-border-color: #665F55;
     --arrow-color: #403F3D;
+    --link-button-border-color: #C1B6AD;
+    --footer-bf-color: #665F55;
+    --hover-button-color: #E1D4C9;
+    --hover-stroke-color: #403F3D;
+    --button-app-color: #665F55;
 }
 
 :root.dark-theme {
@@ -29,4 +34,9 @@
     --slider-bullet-active-color: #C1B6AD;
     --arrow-border-color: #C1B6AD;
     --arrow-color: #E1D4C9;
+    --link-button-border-color: #665F55;
+    --footer-bf-color: #403F3D;
+    --hover-button-color: #292826;
+    --hover-stroke-color: #E1D4C9;
+    --button-app-color: #403F3D;
 }

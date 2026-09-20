@@ -1,6 +1,10 @@
 @import "reset.css";
 @import "variables.css";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--backround-color);
     font-family: "Inter", sans-serif;
@@ -155,7 +159,7 @@ body {
 
 .main {
     position: relative;
-    padding: 80px 16px;
+    padding: 100px 16px;
 }
 
 .section {
@@ -262,12 +266,8 @@ body {
 }
 
 .about-section__title {
-    text-align: left;
+    text-align: justify;
     margin-bottom: 40px;
-}
-
-.about-section__title br {
-    display: none;
 }
 
 .about-section-grid {
@@ -336,6 +336,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: center;
     width: 348px;
     height: 348px;
 }
@@ -383,6 +384,106 @@ body {
     font-size: 16px;
     font-weight: 600;
     line-height: 1.5;
+}
+
+.footer {
+    position: relative;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.footer-container {
+    width: 100%;
+    background-color: var(--footer-bf-color);
+    padding: 60px 16px;
+    border-radius: 40px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.footer-offer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.footer-offer__title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #E1D4C9;
+}
+
+.footer-offer__title > i {
+    color: #B0907A;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.footer-links__item {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid var(--link-button-border-color);
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.footer-links__item:hover {
+    background-color: var(--hover-button-color);
+    border: 1px solid transparent;
+    transition: all .3s ease;
+}
+
+.footer-links__item a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-contact-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.footer-contact-info h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #E1D4C9;
+}
+
+.contact-list__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.contact-list__item span {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #E1D4C9;
 }
 
 @media screen and (min-width: 768px) {
@@ -459,6 +560,16 @@ body {
     .mobile-app-image-box {
         width: 630px;
         height: 630px;
+    }
+
+    .footer-container {
+        padding: 100px 60px;
+    }
+
+    .footer-offer__title {
+        font-size: 60px;
+        max-width: 540px;
+        width: 100%;
     }
 
     @media (hover: hover) {
@@ -551,10 +662,6 @@ body {
         display: none;
     }
 
-    .about-section__title br {
-        display: inline-block;
-    }
-
     .about-section-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
@@ -609,10 +716,14 @@ body {
         height: 630px;
     }
 
-    .app-button:hover {
-        background-color: #665F55;
-        color: #E1D4C9;
-        transition: background-color, color 0.3s ease;
+    .footer-container {
+        padding: 100px;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        align-items: center;
+        column-gap: 100px;
     }
 
     @media (hover: hover) {
@@ -621,11 +732,6 @@ body {
             opacity: 1;
             transform: scale(1);
             margin-left: 8px;
-        }
-
-        .app-button:hover .app-button__icon path {
-            fill: #E1D4C9;
-            transition: fill 0.3s ease;
         }
     }
 }
@@ -649,5 +755,21 @@ body {
     .navigation-list__link:hover::after {
         opacity: 1;
         transform: scaleX(1);
+    }
+
+    .app-button:hover {
+        background-color: var(--button-app-color);
+        color: #E1D4C9;
+        border: 1px solid transparent;
+        transition: all, color 0.3s ease;
+    }
+
+    .app-button:hover .app-button__icon path {
+        fill: #E1D4C9;
+        transition: fill 0.3s ease;
+    }
+
+    .footer-links__item:hover .footer-links__icon path{
+        stroke: var(--hover-stroke-color);
     }
 }
