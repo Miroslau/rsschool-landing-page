@@ -1,0 +1,43 @@
+/* Colors */
+
+:root {
+    --backround-color: #E1D4C9;
+    --sun-button-color: #B0907A;
+    --moon-button-color: transparent;
+    --navigation-item-color: #403F3D;
+    --color-tuatara: #403F3D;
+    --color-bright-green: #665F55;
+    --color-silk: #C1B6AD;
+    --color-tuatara-text: #292826;
+    --header-text-color: #E1D4C9;
+    --header-text-color-italic: #B0907A;
+    --slider-bullet-color: #C1B6AD;
+    --slider-bullet-active-color: #665F55;
+    --arrow-border-color: #665F55;
+    --arrow-color: #403F3D;
+    --link-button-border-color: #C1B6AD;
+    --footer-bf-color: #665F55;
+    --hover-button-color: #E1D4C9;
+    --hover-stroke-color: #403F3D;
+    --button-app-color: #665F55;
+}
+
+:root.dark-theme {
+    --color-silk: #665F55;
+    --backround-color: #292826;
+    --sun-button-color: transparent;
+    --moon-button-color: #B0907A;
+    --color-bright-green: #C1B6AD;
+    --color-tuatara: #C1B6AD;
+    --navigation-item-color: #E1D4C9;
+    --header-text-color: #292826;
+    --slider-bullet-color: #665F55;
+    --slider-bullet-active-color: #C1B6AD;
+    --arrow-border-color: #C1B6AD;
+    --arrow-color: #E1D4C9;
+    --link-button-border-color: #665F55;
+    --footer-bf-color: #403F3D;
+    --hover-button-color: #292826;
+    --hover-stroke-color: #E1D4C9;
+    --button-app-color: #403F3D;
+}

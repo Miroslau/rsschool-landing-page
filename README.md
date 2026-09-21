@@ -4,8 +4,8 @@ A responsive, two-page website for a modern coffee house, featuring adaptive lay
 
 ## 🔗 Project Links
 
-*   **Deploy Link:** [Live Demo](https://github.io)
-*   **Pull Request:** [PR Link](https://github.com)
+*   **Deploy Link:** [Live Demo](https://miroslau.github.io/rsschool-landing-page/index)
+*   **Pull Request:** [PR Link](https://github.com/Miroslau/rsschool-landing-page/pull/2)
 *   **Figma Mockup:** [Coffee House 2026Q3](https://www.figma.com/design/yuc5s9NCc4jENkk5LdFfvX/Coffee-House-2026Q3?node-id=0-1&p=f&t=6ppXAThv6wnTcaMK-0)
 
 ---
@@ -32,7 +32,10 @@ The project is strictly developed according to the provided Figma design guideli
 *   **HTML5** (Semantic structure)
 *   **CSS3 / SCSS** (BEM methodology, Flexbox, Grid, Custom Properties for themes)
 *   **Vanilla JavaScript** (Theme switching logic, `localStorage` integration)
-*   **Build Tool:** Vite *(or Webpack, modify if you don't use one)*
 *   **Reset:** `modern-normalize`
 
 ---
+
+## 🧑‍💻 Author
+
+*   **GitHub:** [Miroslau](https://github.com/Miroslau)
