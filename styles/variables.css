@@ -23,6 +23,7 @@
 }
 
 :root.dark-theme {
+    --color-silk: #665F55;
     --backround-color: #292826;
     --sun-button-color: transparent;
     --moon-button-color: #B0907A;
