@@ -177,6 +177,50 @@ body {
     color: #B0907A;
 }
 
+.menu-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+}
+
+.tab-button {
+    padding: 8px;
+    border: 1px solid var(--color-silk);
+    background-color: transparent;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: var(--button-app-color);
+    transition: background-color 0.3s ease;
+}
+
+.tab-button__icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-silk);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button__text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--color-tuatara);
+    padding-right: 8px;
+    transition: color 0.3s ease;
+}
+
 .menu-list {
     display: flex;
     flex-direction: column;
@@ -561,5 +605,15 @@ body {
 
     .footer-links__item:hover .footer-links__icon path{
         stroke: var(--hover-stroke-color);
+    }
+
+    .tab-button:hover .tab-button__icon {
+        background-color: var(--header-text-color);
+        transition: background-color 0.3s ease;
+    }
+
+    .tab-button:hover .tab-button__text {
+        color: #E1D4C9;
+        transition: color 0.3s ease;
     }
 }
