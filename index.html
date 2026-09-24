@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script src="./scripts/toggle-button.js" defer></script>
+    <script src="./scripts/burger-menu.js" defer></script>
     <script src="./scripts/hero-video.js" async></script>
     <title>Coffee House</title>
 </head>
@@ -62,6 +63,28 @@
                     </a>
                 </nav>
             </div>
+        </div>
+        <div class="header-burger-menu">
+            <nav class="header-burger-menu__nav">
+                <ul class="burger-navigation">
+                    <li class="burger-navigation__item">
+                        <a href="#favorite-section" class="burger-navigation__link">Favorite coffee</a>
+                    </li>
+                    <li class="burger-navigation__item">
+                        <a href="#about-section" class="burger-navigation__link">About</a>
+                    </li>
+                    <li class="burger-navigation__item">
+                        <a href="#mobile-app-section" class="burger-navigation__link">Mobile app</a>
+                    </li>
+                    <li class="burger-navigation__item">
+                        <a href="#contact-us" class="burger-navigation__link">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="./menu.html" class="navigation-list__link_icon burger-menu__button">
+                <span>Menu</span>
+                <img class="cup-icon__img" src="./pictures/svg/coffee-cup.svg" alt="coffee-cup-icon">
+            </a>
         </div>
         <section class="header-title">
             <video id="hero-video" class="header-title__video" loop muted playsinline>
