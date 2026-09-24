@@ -26,6 +26,7 @@ body {
     margin-top: 20px;
     padding: 60px 16px;
     border-radius: 40px;
+    overflow: hidden;
 }
 
 .header-title__heading {
@@ -52,10 +53,28 @@ body {
 }
 
 .header-title__container {
+    position: relative;
+    z-index: 2;
     max-width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 40px;
+}
+
+.header-title__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.header-title__video.is-playing {
+    opacity: 1;
 }
 
 .header-container {
