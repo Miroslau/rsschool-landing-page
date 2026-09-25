@@ -290,6 +290,18 @@ body.lock-scroll {
     width: 100%;
 }
 
+.slider-card.js-slide {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slider-card.js-slide.is-active {
+    display: flex;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
 .slider-card__title {
     font-size: 24px;
     font-weight: 600;
@@ -339,7 +351,7 @@ body.lock-scroll {
     cursor: pointer;
 }
 
-.slider-bullet_active {
+.slider-bullet.slider-bullet_active {
     background-color: var(--slider-bullet-active-color);
 }
 

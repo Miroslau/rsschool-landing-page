@@ -15,6 +15,7 @@
     <script src="./scripts/toggle-button.js" defer></script>
     <script src="./scripts/burger-menu.js" defer></script>
     <script src="./scripts/hero-video.js" async></script>
+    <script src="./scripts/favorite-slider.js" async></script>
     <title>Coffee House</title>
 </head>
 <body>
@@ -113,27 +114,43 @@
             <h2 class="section__title favorite-section__title">Choose your <i>favorite</i> <br> coffee</h2>
             <div class="slider-container">
                 <div class="slider-content-wrapper">
-                    <button class="slider-arrow slider-arrow_left">
+                    <button class="slider-arrow slider-arrow_left" id="prev-btn">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18.5 12H6M12 18L6 12L12 6" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
-                    <div class="slider-card">
-                        <img class="slider-card__image" src="./pictures/png/coffee-1.png" alt="S’mores Frappuccino">
+                    <div class="slider-card js-slide">
+                        <img class="slider-card__image" src="./pictures/png/favorite-coffee-1.png" alt="S’mores Frappuccino">
                         <h3 class="slider-card__title">S’mores Frappuccino</h3>
                         <p class="slider-card__text">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
                         <span class="slider-card__price">$5.50</span>
                     </div>
-                    <button class="slider-arrow slider-arrow_right">
+                    <div class="slider-card js-slide">
+                        <img class="slider-card__image" src="./pictures/png/coffee-favorite-2.png" alt="Caramel Macchiato">
+                        <h3 class="slider-card__title">Caramel Macchiato</h3>
+                        <p class="slider-card__text">
+                            Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.
+                        </p>
+                        <span class="slider-card__price">$5.00</span>
+                    </div>
+                    <div class="slider-card js-slide">
+                        <img class="slider-card__image" src="./pictures/png/coffee-favorite-3.png" alt="Ice coffee">
+                        <h3 class="slider-card__title">Ice coffee</h3>
+                        <p class="slider-card__text">
+                            A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.
+                        </p>
+                        <span class="slider-card__price">$4.50</span>
+                    </div>
+                    <button class="slider-arrow slider-arrow_right" id="next-btn">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 12H18.5M12.5 18L18.5 12L12.5 6" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
                 </div>
                 <div class="slider-controls">
-                    <span class="slider-bullet slider-bullet_active"></span>
-                    <span class="slider-bullet"></span>
-                    <span class="slider-bullet"></span>
+                    <span class="slider-bullet js-bullet"></span>
+                    <span class="slider-bullet js-bullet"></span>
+                    <span class="slider-bullet js-bullet"></span>
                 </div>
             </div>
         </section>
