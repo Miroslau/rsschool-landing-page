@@ -292,7 +292,7 @@ body {
     margin: 0 auto;
 }
 
-.menu-list .menu-list__item:nth-child(n+5) {
+.menu-list .js-card:nth-child(n+5) {
     display: none;
 }
 
@@ -333,6 +333,7 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 12px;
+    flex-grow: 1;
 }
 
 .menu-list-content__price {
@@ -368,6 +369,10 @@ body {
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+.load-button.is-hidden {
+    display: none !important;
 }
 
 .footer {
