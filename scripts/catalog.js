@@ -8,7 +8,7 @@ const tabButtons = document.querySelectorAll('.tab-button');
 
 async function getProducts() {
     try {
-        const response = await fetch('../products.json');
+        const response = await fetch('./products.json');
 
         if (!response.ok) {
             throw new Error('Error getting products');
