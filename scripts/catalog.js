@@ -4,6 +4,8 @@ let defaultCategory = 'coffee';
 const listContainer = document.querySelector('.menu-list');
 const loadMoreBtn = document.getElementById('load-more');
 
+const tabButtons = document.querySelectorAll('.tab-button');
+
 async function getProducts() {
     try {
         const response = await fetch('../products.json');
@@ -15,6 +17,7 @@ async function getProducts() {
         productsData = await response.json();
 
         renderProductByCategory(defaultCategory);
+        setupTabs();
     } catch (error) {}
 }
 
@@ -47,6 +50,26 @@ function renderProductByCategory(category) {
     });
 
     handleLoadMoreVisibility();
+}
+
+function setupTabs() {
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const selectedCategory = button.getAttribute('data-category');
+
+            if (selectedCategory === defaultCategory) return;
+
+            defaultCategory = selectedCategory;
+
+            tabButtons.forEach(button => {
+                button.classList.remove('tab-button_active');
+            });
+
+            button.classList.add('tab-button_active');
+
+            renderProductByCategory(defaultCategory);
+        })
+    })
 }
 
 function handleLoadMoreVisibility() {
