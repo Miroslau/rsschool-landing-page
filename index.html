@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./pictures/favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="./pictures/favicon/icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="./pictures/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./manifest.webmanifest">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
     <script src="./scripts/toggle-button.js" defer></script>
+    <script src="./scripts/burger-menu.js" defer></script>
+    <script src="./scripts/hero-video.js" async></script>
+    <script src="./scripts/favorite-slider.js" async></script>
     <title>Coffee House</title>
 </head>
 <body>
@@ -59,7 +65,32 @@
                 </nav>
             </div>
         </div>
+        <div class="header-burger-menu">
+            <nav class="header-burger-menu__nav">
+                <ul class="burger-navigation">
+                    <li class="burger-navigation__item">
+                        <a href="#favorite-section" class="burger-navigation__link">Favorite coffee</a>
+                    </li>
+                    <li class="burger-navigation__item">
+                        <a href="#about-section" class="burger-navigation__link">About</a>
+                    </li>
+                    <li class="burger-navigation__item">
+                        <a href="#mobile-app-section" class="burger-navigation__link">Mobile app</a>
+                    </li>
+                    <li class="burger-navigation__item">
+                        <a href="#contact-us" class="burger-navigation__link">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="./menu.html" class="navigation-list__link_icon burger-menu__button">
+                <span>Menu</span>
+                <img class="cup-icon__img" src="./pictures/svg/coffee-cup.svg" alt="coffee-cup-icon">
+            </a>
+        </div>
         <section class="header-title">
+            <video id="hero-video" class="header-title__video" loop muted playsinline>
+                <source src="./pictures/mp4/hero.mp4" type="video/mp4">
+            </video>
             <div class="header-title__container">
                 <h1 class="header-title__heading">
                     <i>Enjoy</i> premium <br>
@@ -83,27 +114,43 @@
             <h2 class="section__title favorite-section__title">Choose your <i>favorite</i> <br> coffee</h2>
             <div class="slider-container">
                 <div class="slider-content-wrapper">
-                    <button class="slider-arrow slider-arrow_left">
+                    <button class="slider-arrow slider-arrow_left" id="prev-btn">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18.5 12H6M12 18L6 12L12 6" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
-                    <div class="slider-card">
-                        <img class="slider-card__image" src="./pictures/png/coffee-1.png" alt="S’mores Frappuccino">
+                    <div class="slider-card js-slide">
+                        <img class="slider-card__image" src="./pictures/png/favorite-coffee-1.png" alt="S’mores Frappuccino">
                         <h3 class="slider-card__title">S’mores Frappuccino</h3>
                         <p class="slider-card__text">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
                         <span class="slider-card__price">$5.50</span>
                     </div>
-                    <button class="slider-arrow slider-arrow_right">
+                    <div class="slider-card js-slide">
+                        <img class="slider-card__image" src="./pictures/png/coffee-favorite-2.png" alt="Caramel Macchiato">
+                        <h3 class="slider-card__title">Caramel Macchiato</h3>
+                        <p class="slider-card__text">
+                            Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.
+                        </p>
+                        <span class="slider-card__price">$5.00</span>
+                    </div>
+                    <div class="slider-card js-slide">
+                        <img class="slider-card__image" src="./pictures/png/coffee-favorite-3.png" alt="Ice coffee">
+                        <h3 class="slider-card__title">Ice coffee</h3>
+                        <p class="slider-card__text">
+                            A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.
+                        </p>
+                        <span class="slider-card__price">$4.50</span>
+                    </div>
+                    <button class="slider-arrow slider-arrow_right" id="next-btn">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 12H18.5M12.5 18L18.5 12L12.5 6" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
                 </div>
                 <div class="slider-controls">
-                    <span class="slider-bullet slider-bullet_active"></span>
-                    <span class="slider-bullet"></span>
-                    <span class="slider-bullet"></span>
+                    <span class="slider-bullet js-bullet"></span>
+                    <span class="slider-bullet js-bullet"></span>
+                    <span class="slider-bullet js-bullet"></span>
                 </div>
             </div>
         </section>
