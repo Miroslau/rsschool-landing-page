@@ -83,4 +83,17 @@ function handleLoadMoreVisibility() {
     }
 }
 
+if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', () => {
+        const hiddenCards = listContainer.querySelectorAll('.js-card:not(.is-visible)');
+        hiddenCards.forEach((card, index) => {
+            if (index >= 4) {
+                card.classList.add('is-visible');
+            }
+        });
+        loadMoreBtn.classList.add('is-hidden');
+
+    });
+}
+
 getProducts();
