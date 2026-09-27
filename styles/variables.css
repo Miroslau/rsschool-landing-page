@@ -20,6 +20,7 @@
     --hover-button-color: #E1D4C9;
     --hover-stroke-color: #403F3D;
     --button-app-color: #665F55;
+    --modal-window: #E1D4C9;
 }
 
 :root.dark-theme {
@@ -40,4 +41,5 @@
     --hover-button-color: #292826;
     --hover-stroke-color: #E1D4C9;
     --button-app-color: #403F3D;
+    --modal-window: #403F3D;
 }
