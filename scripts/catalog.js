@@ -86,12 +86,12 @@ function handleLoadMoreVisibility() {
     }
 }
 
-function openModal(product) {
+function openModal(product, productIndex) {
     if (!modalOverlay || !modalContainer) return;
 
     modalContainer.innerHTML = `
-        <div class="modal-conent">
-            <div class="product">
+        <img class="product-image" src="./pictures/png/${product.category}-${productIndex + 1}.png" alt="${product.name}">
+        <div class="product">
                 <div class="product__title">
                     <h2 class="product__name">${product.name}</h2>
                     <p class="product__description">${product.description}</p>
@@ -155,7 +155,6 @@ function openModal(product) {
                 </div>
                 <button class="close-button">Close</button>
             </div>
-        </div>
     `;
 
     modalOverlay.classList.add('is-open');
@@ -229,10 +228,11 @@ if (listContainer) {
         const productName = clickedCard.querySelector('.menu-list-content__title').textContent;
 
         const chosenProduct = productsData.find((product) => product.name === productName);
+        const productIndex = productsData.findIndex(product => product.name === productName);
 
         console.log('clickedCard: ', chosenProduct);
 
-        openModal(chosenProduct);
+        openModal(chosenProduct, productIndex);
     } );
 }
 

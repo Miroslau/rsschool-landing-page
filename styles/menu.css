@@ -532,6 +532,17 @@ body.lock-scroll {
     color: #E1D4C9;
 }
 
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 342px;
+}
+
+.product-image {
+    display: none;
+}
+
 .product {
     display: flex;
     flex-direction: column;
@@ -555,8 +566,6 @@ body.lock-scroll {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    max-width: 310px;
-    width: 100%;
     color: var(--navigation-item-color);
 }
 
@@ -719,6 +728,25 @@ body.lock-scroll {
         width: 100%;
     }
 
+    .modal-content {
+        flex-direction: row;
+        column-gap: 20px;
+        max-width: 712px;
+    }
+
+    .product-image {
+        display: block;
+        width: 340px;
+        height: 340px;
+        object-fit: cover;
+        border-radius: 40px;
+        flex-shrink: 0;
+    }
+
+    .product {
+        flex-grow: 1;
+    }
+
     @media (hover: hover) {}
 }
 
@@ -827,6 +855,11 @@ body.lock-scroll {
         flex-direction: row;
         align-items: center;
         column-gap: 100px;
+    }
+
+    .product-image {
+        width: 310px;
+        height: 310px;
     }
 
     @media (hover: hover) {
