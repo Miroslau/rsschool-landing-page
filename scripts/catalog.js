@@ -153,7 +153,7 @@ function openModal(product) {
                         enjoy your favorite coffee with up to 20% discount.
                     </span>
                 </div>
-                <button>close</button>
+                <button class="close-button">Close</button>
             </div>
         </div>
     `;
@@ -164,7 +164,13 @@ function openModal(product) {
     const form = document.getElementById('product-form');
     const totalPriceElement = document.getElementById('product-price');
 
+    const closeButton = document.querySelector('.close-button');
+
     const basePrice = parseFloat(product.price);
+
+    if (closeButton) {
+        closeButton.addEventListener('click', closeModal);
+    }
 
     if (form) {
         form.addEventListener('change', () => {

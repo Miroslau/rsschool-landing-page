@@ -548,6 +548,7 @@ body.lock-scroll {
     font-size: 24px;
     font-weight: 600;
     line-height: 1.25;
+    color: var(--navigation-item-color);
 }
 
 .product__description {
@@ -617,7 +618,8 @@ body.lock-scroll {
 }
 
 .option-button:has(input:checked) {
-    background-color: var(--button-app-color);
+    background-color: var(--mode-button-backgroud);
+    border-color: var(--sun-button-color);
 }
 
 .option-button:has(input:checked) .option-button__text {
@@ -625,7 +627,7 @@ body.lock-scroll {
 }
 
 .option-button:has(input:checked) .option-button__icon {
-    background-color: var(--header-text-color);
+    background-color: var(--icon-button-backgroud);
 }
 
 .product__total {
@@ -650,6 +652,17 @@ body.lock-scroll {
     font-size: 10px;
     font-weight: 600;
     line-height: 1.4;
+    color: var(--navigation-item-color);
+}
+
+.close-button {
+    padding: 10px 0;
+    border: 1px solid var(--navigation-item-color);
+    border-radius: 100px;
+    color: var(--navigation-item-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
 }
 
 @media screen and (min-width: 768px) {
